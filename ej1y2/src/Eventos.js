@@ -34,7 +34,7 @@ function Eventos(){
         )
     }
    
-     return <Algo></Algo>  
+     return <Algo/>
 }
 
 

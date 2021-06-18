@@ -1,15 +1,22 @@
 import libreria from "./libreria"
 import './App.css';
 import Header from "./Header"
-import {useState} from "react"
 import Body from "./Body"
-//import Footer from "./Footer"
+import Footer from "./Footer"
+import {useState} from"react"
 function App() {
+  /* let random = Math.floor(Math.random() * 2) */
+  let [esVip, setesVip] = useState(libreria.usuario.vip)
+
+  function setEstado(){
+    setesVip(!esVip)
+  }
   return (
    <>
-    <Header libreria={libreria}></Header>
-     <Body libreria={libreria}></Body>
-    {/* <Footer libreria={libreria}></Footer> */} 
+    <Header libreria={libreria} esVip={esVip} setEstado={setEstado}/>
+     <Body libreria={libreria}/>
+
+    {/* <Footer libro={libreria.libros[random]}></Footer> */}  
    </>
   );
 }

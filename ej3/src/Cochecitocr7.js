@@ -18,7 +18,7 @@ function Cochecitocr7(props){
       altura={coche.altura}
       longidud={coche.longitud}
       color={coche.color}
-    ></Tarjeta>
+    />
     )
   });
 
